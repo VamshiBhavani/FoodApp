@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+      .card-img-top{
+        width:100%;
+        height:350px;
+      }
+      .bg{
+        background-color: white;
+        padding:8px ;
+        box-shadow: 0 0 0.2px 0;
+      }     
+      .main{
+        margin:1% 3%;
+        background-color: rgb(254, 250, 243);
+        box-shadow: 0 0 1px 0;
+        text-align: center;
+      }
+      .bk{
+        background-image: url('home-bg.jpg');
+        padding: 80px;
+      }
+      .txt{
+        text-align:center;
+        justify-content:flex-end;
+        margin: auto;
+      }
+      h2{
+        margin: 20px;        
+      }
+
+      .spc{
+        width:20% ;
+        height: 80px;
+        padding:10px;
+        margin:auto ;
+      }
+
+      .sub{
+        margin:20px 40px;
+      }
+          
+      input,textarea{
+        width:100%;        
+        border-radius: 5px ;
+        padding:5px;
+        margin:auto;
+      }
+
+      footer{
+        padding: 15px;
+        background-color: black;
+        color: white;
+      }      
+      .checked {
+       color: orange;
+      }
+      .rbg{
+        background-color: rgb(21, 25, 29);
+        margin: 30px 5px;
+        padding: 40px 10px;   
+        border: 5px solid white;
+        position: relative;
+        color: #fff;    
+      }
+      .teamimg{
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #fff;            
+      }
+      .pimg{
+        width:100px;       
+        border-radius: 50%;  
+        padding: 5px;  
+        /* object-fit: cover;  */
+                
+      }    
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-utensils"></i><span style ="color:red">Food</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Speciality</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <div class="main">
+    
+ 
+    <header>
+     <div class="row bk">
+      <div class="col-md-5 col-sm-12 txt">
+        <h1>Food Made With Love</h1>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button type="button" class="btn btn-outline-danger">Order Now</button>
+      </div>
+      <div class="col-md-6 col-sm-12 "><img src="home-img.png" class="img-fluid" ></div>
+     </div>
+    </header>   
+
+    <div class="sub">
+      <h2>Our <span style="color: red;">Speciality</span></h2>
+      <div class="row row-cols-1 row-cols-md-4 ">
+        <div class="col  col-md-4 col-sm-4 mb-4 ">
+          <div class="card" >
+            <img src="s-1.png" class="spc" alt="...">
+            <div class="card-body">
+              <h5>Tasty Burger</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-sm-4 mb-4 ">
+          <div class="card" >
+            <img src="s-2.png" class="spc" alt="...">
+            <div class="card-body">
+              <h5>Tasty Pizza</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-sm-4 mb-4 ">
+          <div class="card" >
+            <img src="s-3.png" class="spc" alt="...">
+            <div class="card-body">
+              <h5>Cold Ice Cream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-sm-4 mb-4 ">
+          <div class="card" >
+            <img src="s-4.png" class="spc" alt="...">
+          <div class="card-body">
+            <h5>Cool-Drink</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col col-md-4 col-sm-4  mb-4">
+          <div class="card" >
+            <img src="s-5.png" class="spc" alt="...">
+            <div class="card-body">
+              <h5>Tasty Sweets</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-sm-4  mb-4">
+          <div class="card" >
+            <img src="s-6.png" class="spc" alt="...">
+            <div class="card-body">
+              <h5>Healthy BreakFast</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h2>Most <span style="color: red;">Popular </span>Foods</h2>
+      <div class="row row-cols-1 row-cols-md-3 ">
+        <div class="col col-sm-4 mb-4 ">
+          <div class="card" >
+            <img src="p-1.jpg" class="card-img-top img-fluid p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tasty Burger</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-stroke checked"></span>
+                </div>
+              <button type="button" class="btn btn-outline-danger">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 mb-4 ">
+          <div class="card" >
+            <img src="p-2.jpg" class="card-img-top  img-fluid p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tasty Cakes</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-stroke checked"></span>
+                </div>
+              <button type="button" class="btn btn-outline-danger">Order Now</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-sm-4 mb-4 ">
+          <div class="card">
+            <img src="p-3.jpg" class="card-img-top  img-fluid p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tasty Sweets</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-stroke checked"></span>
+                </div>
+              <button type="button" class="btn btn-outline-danger">Order Now</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-sm-4 mb-4 ">
+          <div class="card">
+            <img src="p-4.jpg" class="card-img-top  img-fluid p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tasty CupCakes</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-stroke checked"></span>
+                </div>
+              <button type="button" class="btn btn-outline-danger">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 mb-4 ">
+          <div class="card" >
+            <img src="p-5.jpg" class="card-img-top  img-fluid p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cold Drinks</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-stroke checked"></span>
+                </div>
+              <button type="button" class="btn btn-outline-danger">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 mb-4  ">
+          <div class="card">
+            <img src="p-6.jpg" class="card-img-top  img-fluid p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cool Ice-Creams</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-stroke checked"></span>
+                </div>
+              <button type="button" class="btn btn-outline-danger">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h2>How It <span style="color: red;">Works</span></h2>
+      <div class="row row-cols-1 row-cols-md-4 ">
+      <div class="col col-sm-3 ">       
+        <img src="step-1.jpg" style="border-radius: 50%;border: 5px solid white;width:90%" alt="...">         
+        <h5 class="card-title">Choose your <br>favorite Food</h5>                  
+      </div>
+      <div class="col  col-sm-3 ">
+         <img src="step-2.jpg" style="border-radius: 50%;border: 5px solid white;width:90%" alt="...">
+          <h5 class="card-title">Free and Fast<br> Delivery</h5>      
+        </div>
+      <div class="col  col-sm-3 ">
+         <img src="step-3.jpg" style="border-radius: 50%;border: 5px solid white;width:90%" alt="...">
+          <h5 class="card-title">Easy Payments <br>Methods</h5>
+      </div>
+      <div class="col col-sm-3 ">
+         <img src="step-4.jpg" style="border-radius: 50%;border: 5px solid white;width:90%" alt="...">
+          <h5 class="card-title">And Finally, <br>Enjoy your Food</h5>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="sub">
+      <h2>Our Food <span style="color: red;">Gallery</span></h2>
+      <div class="row row-cols-1 row-cols-md-3 ">
+        <div class="col col-sm-4 mb-4 "> <img src="g-1.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-2.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-3.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-4.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-5.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-6.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-7.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-8.jpg" class=" img-fluid bg" alt="...">
+        </div>
+        <div class="col col-sm-4 mb-4 "> <img src="g-9.jpg" class=" img-fluid bg" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h2>Over Customers <span style="color: red;">Review</span></h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col col-sm-4 p-2">
+          <div class="card rbg ">
+            <div class="teamimg"><img src="pic1.png" class="pimg" alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+                <P>Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 p-2">
+          <div class="card rbg ">
+            <div class="teamimg "><img src="pic1.png" class="pimg" alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <P>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 p-2">
+          <div class="card rbg bg">
+            <div class="teamimg"><img src="pic1.png" class="pimg" alt="..."></div>   
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <P>Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
+                </div>            
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub">
+      <h2><span style="color: red;">Order</span> Now</h2>
+      <div class="row bg ">
+        <div class="col-md-5 col-sm-7 mb-2" >
+          <img src="waite.jpg" class="img-fluid" style="width:100%;height:100%;">
+        </div>
+        <div class="col-md-7 col-sm-5 mb-2 " style="justify-content: center;" >
+          <div class="row  ">
+            <div class="col col-md-6 col-sm-12 p-2">  <input type="text" name="name" placeholder="name"></div>
+            <div class="col col-md-6 col-sm-12 p-2">  <input type="email" name="email" placeholder="email"></div>
+          </div>
+          <div class="row  ">
+            <div class="col col-md-6 col-sm-12 p-2">  <input type="number" name="number" placeholder="number"></div>
+            <div class="col col-md-6 col-sm-12 p-2">   <input type="text" name="fooditem" placeholder="fooditem"></div>
+            </div>
+          <div class="row mb-2 " >
+            <textarea type="Address"  name="address"  rows="4" style="width:97% ;">address </textarea>
+          </div>
+          <div class="p-4">
+            <button type="button" class="btn btn-outline-danger " style="margin:auto">Order Now</button>    
+          </div>                              
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div style="margin:10px">
+      <button type="button" class="btn btn-outline-danger">Facebook</button>
+      <button type="button" class="btn btn-outline-danger">Twitter</button>
+      <button type="button" class="btn btn-outline-danger">Instagram</button>
+      <button type="button" class="btn btn-outline-danger">LinkedIn</button>
+      <button type="button" class="btn btn-outline-danger">Pintrest</button></div>
+      <p>Created By<span style="color: red;"> VAMC </span>| All Rigths are Reserved</p>
+    </footer>
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
